@@ -305,18 +305,6 @@ footer {
   margin-bottom: 24px;
 }
 
-/* .footer__head .logo{
-  flex: 0.9;
-}
-
-.footer__head .logo ~ div {
-  display: flex;
-  gap: 212px;
-}
-
-.footer__head .logo ~ div h4:last-child{
-  margin-right: 10px;
-} */
 .footer__main {
   display: flex;
 }
