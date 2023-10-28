@@ -3,8 +3,15 @@
   margin: 0;
 }
 
+:root {
+  --Wei: #fff;
+  --Accent: #fbd784;
+  --Gradient: rgba(11, 29, 38, 0);
+  --Background: #0b1d26;
+}
+
 p {
-  color: #fff;
+  color: var(--Wei);
   font-family: "Gilroy";
   font-size: 18px;
   font-weight: 700;
@@ -12,7 +19,7 @@ p {
 }
 
 h1 {
-  color: var(--Wei, #fff);
+  color: var(--Wei);
   font-family: "Chronicle Display", sans-serif;
   font-size: 88px;
   font-weight: 300;
@@ -21,14 +28,14 @@ h1 {
 }
 
 h2 {
-  color: #fff;
+  color: var(--Wei);
   font-family: "Chronicle Display", sans-serif;
   font-size: 64px;
   font-weight: 300;
 }
 
 h3 {
-  color: var(--Wei, #fff);
+  color: var(--Wei);
   font-family: "Chronicle Display", sans-serif;
   font-size: 32px;
   font-weight: 700;
@@ -37,15 +44,15 @@ h3 {
 }
 
 h4 {
-  color: var(--Accent, #fbd784);
-  font-family: Gilroy;
+  color: var(--Accent);
+  font-family: "Gilroy";
   font-size: 24px;
   font-weight: 700;
   line-height: 32px; /* 133.333% */
 }
 
 body {
-  background-color: #0b1d26;
+  background-color: var(--Background);
 }
 
 /* бэкграунд */
@@ -60,7 +67,11 @@ body {
 }
 
 .filter-top {
-  background: linear-gradient(330deg, rgba(11, 29, 38, 0) 31%, #0b1d26 109%);
+  background: linear-gradient(
+    330deg,
+    var(--Gradient) 31%,
+    var(--Background) 109%
+  );
 
   position: absolute;
   top: 0;
@@ -72,7 +83,11 @@ body {
 }
 
 .filter-bot {
-  background: linear-gradient(180deg, rgba(11, 29, 38, 0) 0%, #0b1d26 61.5%);
+  background: linear-gradient(
+    180deg,
+    var(--Gradient) 0%,
+    var(--Background) 61.5%
+  );
 
   position: absolute;
   top: 1200px;
@@ -187,14 +202,14 @@ main {
 }
 
 .annotation__line {
-  background: var(--Accent, #fbd784);
+  background: var(--Accent);
   display: block;
   width: 72px;
   height: 2px;
 }
 
 .annotation p {
-  color: var(--Accent, #fbd784);
+  color: var(--Accent);
   font-weight: 800;
   letter-spacing: 6px;
   text-transform: uppercase;
@@ -228,7 +243,7 @@ main {
   height: 60px;
   width: 3px;
 
-  background: #fff;
+  background: var(--Wei);
   opacity: 0.5;
 }
 
@@ -279,7 +294,7 @@ main {
 }
 
 .card__read-more p {
-  color: var(--Accent, #fbd784);
+  color: var(--Accent);
 }
 
 .reverse-card {
