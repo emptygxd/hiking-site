@@ -23,7 +23,7 @@ h1 {
   font-family: "Chronicle Display", sans-serif;
   font-size: 88px;
   font-weight: 300;
-  line-height: 100px; /* 113.636% */
+  line-height: 100px;
   text-transform: capitalize;
 }
 
@@ -48,14 +48,13 @@ h4 {
   font-family: "Gilroy";
   font-size: 24px;
   font-weight: 700;
-  line-height: 32px; /* 133.333% */
+  line-height: 32px;
 }
 
 body {
   background-color: var(--Background);
 }
 
-/* бэкграунд */
 .bg {
   width: 100%;
   position: relative;
@@ -131,7 +130,6 @@ body {
   z-index: 1;
 }
 
-/* хэдер */
 header {
   position: relative;
   z-index: 3;
@@ -157,7 +155,6 @@ header p {
   gap: 8px;
 }
 
-/* контент */
 main {
   position: relative;
   z-index: 3;
@@ -171,7 +168,6 @@ main {
   margin-bottom: 843px;
 }
 
-/* соц сети */
 .content-header__socials {
   display: flex;
   flex-direction: column;
@@ -187,7 +183,6 @@ main {
   height: 24px;
 }
 
-/* тайтл */
 .content-header__title {
   display: flex;
   flex-direction: column;
@@ -215,14 +210,12 @@ main {
   text-transform: uppercase;
 }
 
-/* скролл вниз */
 .content-header__scroll {
   display: flex;
   align-items: center;
   gap: 16px;
 }
 
-/* пагинация */
 .content-header__pagination {
   display: flex;
   align-items: center;
@@ -251,7 +244,6 @@ main {
   opacity: 1;
 }
 
-/* карточки */
 .card-wrapper {
   padding: 0 150px;
 }
@@ -282,7 +274,7 @@ main {
 .card__number p {
   font-size: 240px;
   font-weight: 700;
-  line-height: 240px; /* 100% */
+  line-height: 240px;
 
   opacity: 0.1;
 }
@@ -309,7 +301,6 @@ main {
   left: 680px;
 }
 
-/* футер */
 footer {
   padding: 0 229px 120px;
 }
@@ -358,4 +349,56 @@ footer {
 
 .right-part p {
   font-weight: 500;
+}
+
+@media screen and (max-width: 1500px) {
+  .filter-bot{
+    top: 1000px;
+  }
+
+  .mid img {
+    height: 1000px;
+  }
+
+  .content-header__title {
+    width: 600px;
+  }
+
+  .annotation__line {
+    width: 50px;
+  }
+
+  h1 {
+    font-size: 60px;
+    line-height: 80px;
+  }
+
+  .card-wrapper {
+    padding: 0 80px;
+  }
+
+  .card {
+    width: 900px;
+    height: 700px;
+    margin-bottom: 50px;
+  }
+
+  .card__text {
+    padding: 80px 60px 80px 90px;
+    gap: 15px;
+  }
+
+  .card__img img {
+    width: 250px;
+    height: 300px;
+  }
+
+  footer {
+    padding: 0 150px 80px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .filter-bot{
+    top: 900px;
+  }
 }
